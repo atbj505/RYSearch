@@ -20,4 +20,6 @@
 
 @property (nonatomic, assign) id<RYSearchTagViewDelegate> delegate;
 
+-(instancetype)initWithFrame:(CGRect)frame tagsArrar:(NSArray *)array;
+
 @end

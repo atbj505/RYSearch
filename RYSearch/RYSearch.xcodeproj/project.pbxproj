@@ -15,6 +15,8 @@
 		57733BDE1AE9D4A000FD71E3 /* RYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BDD1AE9D4A000FD71E3 /* RYSearchBar.m */; };
 		57733BE11AE9D4B900FD71E3 /* RYSearchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BE01AE9D4B900FD71E3 /* RYSearchDelegate.m */; };
 		57733BE81AE9E08500FD71E3 /* RYSearchTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BE71AE9E08500FD71E3 /* RYSearchTagView.m */; };
+		57733BEB1AE9F48300FD71E3 /* RYSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BEA1AE9F48300FD71E3 /* RYSearchTableViewCell.m */; };
+		57733BEF1AE9F85300FD71E3 /* UIButton+ArrayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BEE1AE9F85300FD71E3 /* UIButton+ArrayButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		57733BE01AE9D4B900FD71E3 /* RYSearchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYSearchDelegate.m; sourceTree = "<group>"; };
 		57733BE61AE9E08500FD71E3 /* RYSearchTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYSearchTagView.h; sourceTree = "<group>"; };
 		57733BE71AE9E08500FD71E3 /* RYSearchTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYSearchTagView.m; sourceTree = "<group>"; };
+		57733BE91AE9F48300FD71E3 /* RYSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYSearchTableViewCell.h; sourceTree = "<group>"; };
+		57733BEA1AE9F48300FD71E3 /* RYSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYSearchTableViewCell.m; sourceTree = "<group>"; };
+		57733BED1AE9F85300FD71E3 /* UIButton+ArrayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ArrayButton.h"; sourceTree = "<group>"; };
+		57733BEE1AE9F85300FD71E3 /* UIButton+ArrayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ArrayButton.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 				57733BE31AE9DFE000FD71E3 /* Model */,
 				57733BE21AE9DFD900FD71E3 /* View */,
 				57733BE51AE9E00300FD71E3 /* Controller */,
+				57733BEC1AE9F82700FD71E3 /* Category */,
 				57733BB51AE9CF5200FD71E3 /* Supporting Files */,
 			);
 			path = RYSearch;
@@ -132,6 +139,8 @@
 				57733BDD1AE9D4A000FD71E3 /* RYSearchBar.m */,
 				57733BE61AE9E08500FD71E3 /* RYSearchTagView.h */,
 				57733BE71AE9E08500FD71E3 /* RYSearchTagView.m */,
+				57733BE91AE9F48300FD71E3 /* RYSearchTableViewCell.h */,
+				57733BEA1AE9F48300FD71E3 /* RYSearchTableViewCell.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -152,6 +161,15 @@
 				57733BBD1AE9CF5200FD71E3 /* ViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		57733BEC1AE9F82700FD71E3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				57733BED1AE9F85300FD71E3 /* UIButton+ArrayButton.h */,
+				57733BEE1AE9F85300FD71E3 /* UIButton+ArrayButton.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,11 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				57733BBE1AE9CF5200FD71E3 /* ViewController.m in Sources */,
+				57733BEF1AE9F85300FD71E3 /* UIButton+ArrayButton.m in Sources */,
 				57733BE11AE9D4B900FD71E3 /* RYSearchDelegate.m in Sources */,
 				57733BE81AE9E08500FD71E3 /* RYSearchTagView.m in Sources */,
 				57733BBB1AE9CF5200FD71E3 /* AppDelegate.m in Sources */,
 				57733BDE1AE9D4A000FD71E3 /* RYSearchBar.m in Sources */,
 				57733BB81AE9CF5200FD71E3 /* main.m in Sources */,
+				57733BEB1AE9F48300FD71E3 /* RYSearchTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +459,7 @@
 				57733BD71AE9CF5200FD71E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57733BD81AE9CF5200FD71E3 /* Build configuration list for PBXNativeTarget "RYSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +468,7 @@
 				57733BDA1AE9CF5200FD71E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

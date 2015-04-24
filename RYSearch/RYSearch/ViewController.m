@@ -7,16 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "RYSearchBar.h"
 #import "RYSearchDelegate.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) UITableView *tableView;
 
-@property (nonatomic, strong) RYSearchBar *searchBar;
 
-@property (nonatomic, strong) UISearchDisplayController *displayController;
 
 @end
 

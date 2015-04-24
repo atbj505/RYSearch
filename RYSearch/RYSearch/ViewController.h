@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RYSearchBar.h"
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) RYSearchBar *searchBar;
+
+@property (nonatomic, strong) UISearchDisplayController *displayController;
 
 @end
 
