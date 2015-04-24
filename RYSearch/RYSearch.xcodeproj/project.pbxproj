@@ -12,6 +12,9 @@
 		57733BBE1AE9CF5200FD71E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BBD1AE9CF5200FD71E3 /* ViewController.m */; };
 		57733BC31AE9CF5200FD71E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57733BC21AE9CF5200FD71E3 /* Images.xcassets */; };
 		57733BD21AE9CF5200FD71E3 /* RYSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BD11AE9CF5200FD71E3 /* RYSearchTests.m */; };
+		57733BDE1AE9D4A000FD71E3 /* RYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BDD1AE9D4A000FD71E3 /* RYSearchBar.m */; };
+		57733BE11AE9D4B900FD71E3 /* RYSearchDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BE01AE9D4B900FD71E3 /* RYSearchDelegate.m */; };
+		57733BE81AE9E08500FD71E3 /* RYSearchTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57733BE71AE9E08500FD71E3 /* RYSearchTagView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,12 @@
 		57733BD01AE9CF5200FD71E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57733BD11AE9CF5200FD71E3 /* RYSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYSearchTests.m; sourceTree = "<group>"; };
 		57733BDB1AE9D05800FD71E3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		57733BDC1AE9D4A000FD71E3 /* RYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYSearchBar.h; sourceTree = "<group>"; };
+		57733BDD1AE9D4A000FD71E3 /* RYSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYSearchBar.m; sourceTree = "<group>"; };
+		57733BDF1AE9D4B900FD71E3 /* RYSearchDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYSearchDelegate.h; sourceTree = "<group>"; };
+		57733BE01AE9D4B900FD71E3 /* RYSearchDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYSearchDelegate.m; sourceTree = "<group>"; };
+		57733BE61AE9E08500FD71E3 /* RYSearchTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RYSearchTagView.h; sourceTree = "<group>"; };
+		57733BE71AE9E08500FD71E3 /* RYSearchTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RYSearchTagView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +87,9 @@
 		57733BB41AE9CF5200FD71E3 /* RYSearch */ = {
 			isa = PBXGroup;
 			children = (
-				57733BB91AE9CF5200FD71E3 /* AppDelegate.h */,
-				57733BBA1AE9CF5200FD71E3 /* AppDelegate.m */,
-				57733BBC1AE9CF5200FD71E3 /* ViewController.h */,
-				57733BBD1AE9CF5200FD71E3 /* ViewController.m */,
-				57733BC21AE9CF5200FD71E3 /* Images.xcassets */,
+				57733BE31AE9DFE000FD71E3 /* Model */,
+				57733BE21AE9DFD900FD71E3 /* View */,
+				57733BE51AE9E00300FD71E3 /* Controller */,
 				57733BB51AE9CF5200FD71E3 /* Supporting Files */,
 			);
 			path = RYSearch;
@@ -91,6 +98,9 @@
 		57733BB51AE9CF5200FD71E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				57733BB91AE9CF5200FD71E3 /* AppDelegate.h */,
+				57733BBA1AE9CF5200FD71E3 /* AppDelegate.m */,
+				57733BC21AE9CF5200FD71E3 /* Images.xcassets */,
 				57733BB61AE9CF5200FD71E3 /* Info.plist */,
 				57733BB71AE9CF5200FD71E3 /* main.m */,
 				57733BDB1AE9D05800FD71E3 /* PrefixHeader.pch */,
@@ -113,6 +123,35 @@
 				57733BD01AE9CF5200FD71E3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57733BE21AE9DFD900FD71E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57733BDC1AE9D4A000FD71E3 /* RYSearchBar.h */,
+				57733BDD1AE9D4A000FD71E3 /* RYSearchBar.m */,
+				57733BE61AE9E08500FD71E3 /* RYSearchTagView.h */,
+				57733BE71AE9E08500FD71E3 /* RYSearchTagView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		57733BE31AE9DFE000FD71E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57733BDF1AE9D4B900FD71E3 /* RYSearchDelegate.h */,
+				57733BE01AE9D4B900FD71E3 /* RYSearchDelegate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		57733BE51AE9E00300FD71E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				57733BBC1AE9CF5200FD71E3 /* ViewController.h */,
+				57733BBD1AE9CF5200FD71E3 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57733BBE1AE9CF5200FD71E3 /* ViewController.m in Sources */,
+				57733BE11AE9D4B900FD71E3 /* RYSearchDelegate.m in Sources */,
+				57733BE81AE9E08500FD71E3 /* RYSearchTagView.m in Sources */,
 				57733BBB1AE9CF5200FD71E3 /* AppDelegate.m in Sources */,
+				57733BDE1AE9D4A000FD71E3 /* RYSearchBar.m in Sources */,
 				57733BB81AE9CF5200FD71E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
